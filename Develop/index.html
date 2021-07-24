@@ -30,52 +30,107 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <h2 class="date"></h2>
-      <div class="scheduler">
-        <div class="scheduler-columns">
-          <div class="col col-1">
-            <div id="times">
-              <div class="row row-1">9am</div>
-              <div class="row row-2">10am</div>
-              <div class="row row-3">11am</div>
-              <div class="row row-4">12pm</div>
-              <div class="row row-5">1pm</div>
-              <div class="row row-6">2pm</div>
-              <div class="row row-7">3pm</div>
-              <div class="row row-8">4pm</div>
-              <div class="row row-9">5pm</div>
-            </div>
-          </div>
-          <div class="col col-2">
-            <div id="entry">
-              <div class="row row-1"></div>
-              <div class="row row-2"></div>
-              <div class="row row-3"></div>
-              <div class="row row-4"></div>
-              <div class="row row-5"></div>
-              <div class="row row-6"></div>
-              <div class="row row-7"></div>
-              <div class="row row-8"></div>
-              <div class="row row-9"></div>
-            </div>
-          </div>
-          <div class="col col-3">
-            <div id="save" class="btn save-btn">
-              <div class="row row-1"><button type="button">Click Me!</button></div>
-              <div class="row row-2"><button type="button">Click Me!</button></div>
-              <div class="row row-3"><button type="button">Click Me!</button></div>
-              <div class="row row-4"><button type="button">Click Me!</button></div>
-              <div class="row row-5"><button type="button">Click Me!</button></div>
-              <div class="row row-6"><button type="button">Click Me!</button></div>
-              <div class="row row-7"><button type="button">Click Me!</button></div>
-              <div class="row row-8"><button type="button">Click Me!</button></div>
-              <div class="row row-9"><button type="button">Click Me!</button></div>
-            </div>
-          </div>    
+      <div class="scheduler-rows">
+        <div id="time-1" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">9am</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-1" class="event-input" type="text" data-hr="9"></textarea>
+          </span>
+          <span id="save-btn-1" class="save-btn col-3" data-hr="9">
+            ::before
+          </span>
         </div>
-      </div>
+        <div id="time-2" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">10am</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-2" class="event-input" type="text" data-hr="10"></textarea>
+          </span>
+          <span id="save-btn-2" class="save-btn col-3" data-hr="10">
+            ::before
+          </span>
+        </div>
+        <div id="time-3" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">11am</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-3" class="event-input" type="text" data-hr="11"></textarea>
+          </span>
+          <span id="save-btn-3" class="save-btn col-3" data-hr="11">
+            ::before
+          </span>
+        </div>
+        <div id="time-4" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">12pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-4" class="event-input" type="text" data-hr="12"></textarea>
+          </span>
+          <span id="save-btn-4" class="save-btn col-3" data-hr="12">
+            ::before
+          </span>
+        </div>
+        <div id="time-5" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">1pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-5" class="event-input" type="text" data-hr="1"></textarea>
+          </span>
+          <span id="save-btn-5" class="save-btn col-3" data-hr="1">
+            ::before
+          </span>
+        </div>
+        <div id="time-6" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">2pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-6" class="event-input" type="text" data-hr="2"></textarea>
+          </span>
+          <span id="save-btn-6" class="save-btn col-3" data-hr="2">
+            ::before
+          </span>
+        </div>      
+        <div id="time-7" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">3pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-7" class="event-input" type="text" data-hr="3"></textarea>
+          </span>
+          <span id="save-btn-7" class="save-btn col-3" data-hr="3">
+            Click Me!
+          </span>
+        </div>        
+        <div id="time-8" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">4pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-8" class="event-input" type="text" data-hr="4"></textarea>
+          </span>
+          <span id="save-btn-8" class="save-btn col-3" data-hr="4">
+            ::before
+          </span>
+        </div>       
+        <div id="time-9" class="time-block row">
+          <span class="time-column col-1">
+            <span class="hour">5pm</span>
+          </span>
+          <span class="input-column col-2 future">
+            <textarea id="event-input-9" class="event-input" type="text" data-hr="5"></textarea>
+          </span>
+          <span id="save-btn-9" class="save-btn col-3" data-hr="5">
+            ::before
+          </span>
+        </div>      
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
