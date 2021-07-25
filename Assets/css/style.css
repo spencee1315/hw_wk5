@@ -92,7 +92,7 @@ textarea{
 } */
 
 /* added this */
-/* .saveBtn::before {
+.saveBtn::before {
   content: fa fa-save"></i>;
   position: absolute;
   top: 50%;
@@ -102,4 +102,4 @@ textarea{
 .saveBtn:hover::before {
   font-size: 2.2rem;
   transition: all .3s ease-in-out;
-} */
+}
