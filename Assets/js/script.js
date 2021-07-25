@@ -1,22 +1,22 @@
-Set the business hours
+// Set the business hours
 const business = { start: 9, end: 18 }
 
 var values, dateKey
 
 function init(now=moment()) {
-    Add the current date to top of screen
+    // Add the current date to top of screen
     $('#currentDay').text(now.format('dddd, MMMM Do'))
 
-    Get the current hour
+    // Get the current hour
     var hour = now.hour()
 
-    Get values from local storage
+    // Get values from local storage
     var localStr = localStorage.getItem('schedulerData') || "{}"
     values = JSON.parse(localStr)
     dateKey = now.format('YYYYMMDD')
     if (!(dateKey in values)) values[dateKey] = {}
 
-    Build the time slots
+    // Build the time slots
     var container = $('.container')
     for (let hr = business.start; hr < business.end; hr++) {
         let time = moment(hr, 'H')
@@ -50,12 +50,12 @@ function init(now=moment()) {
     setAlarm(now)
 }
 init()
-init(moment('20201101 135955'))
+// init(moment('20201101 135955'))
 
 var timer
 
 function setAlarm(now=moment()) {
-    Update display at the start of the next hour
+    // Update display at the start of the next hour
     var startOfNextHour = now.clone().endOf('hour').add(1, 'second')
     var durationToNextHour = startOfNextHour - now
     timer = setInterval(function() {
@@ -65,10 +65,10 @@ function setAlarm(now=moment()) {
 }
 
 function updateDisplay(now=moment()) {
-    Get the current hour
+    // Get the current hour
     var hour = now.hour()
 
-    Update each color
+    // Update each color
     var cells = $('.info-column')
     console.log(cells);
     for (let i = 0, hr = business.start; i < cells.length; i++, hr++) {
