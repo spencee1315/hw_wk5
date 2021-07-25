@@ -1,5 +1,5 @@
-// Set the business hours
-const business = { start: 9, end: 18 }
+// Set the work hours
+const workDay = { start: 9, end: 18 }
 
 var values, dateKey
 
@@ -18,7 +18,7 @@ function init(now=moment()) {
 
     // Build the time slots
     var container = $('.container')
-    for (let hr = business.start; hr < business.end; hr++) {
+    for (let hr = workDay.start; hr < workDay.end; hr++) {
         let time = moment(hr, 'H')
         let frame = hour > hr ? 'past' : hour < hr ? 'future' : 'present'
         var eventText = values[dateKey][hr] || ''
@@ -71,7 +71,7 @@ function updateDisplay(now=moment()) {
     // Update each color
     var cells = $('.info-column')
     console.log(cells);
-    for (let i = 0, hr = business.start; i < cells.length; i++, hr++) {
+    for (let i = 0, hr = workDay.start; i < cells.length; i++, hr++) {
         let cell = $(cells[i])
         cell.removeClass(['past', 'present', 'future'])
         cell.addClass(hour > hr ? 'past' : hour < hr ? 'future' : 'present')
