@@ -44,7 +44,7 @@ textarea{
 }
 
 /* added this */
-/* .hour-display {
+.hour-display {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem
@@ -84,12 +84,12 @@ textarea{
   background-color: #06AED5;
   color: white;
   cursor: pointer; added this */
-/* }
+}
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-} */
+}
 
 /* added this */
 .saveBtn::before {
