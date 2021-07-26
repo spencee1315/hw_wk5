@@ -16,7 +16,7 @@ function init(now=moment()) {
     dateKey = now.format('YYYYMMDD')
     if (!(dateKey in values)) values[dateKey] = {}
 
-    // Build the time slots
+    // Building time slots
     var container = $('.container')
     for (let hr = workDay.start; hr < workDay.end; hr++) {
         let time = moment(hr, 'H')
@@ -50,7 +50,7 @@ function init(now=moment()) {
     setAlarm(now)
 }
 init()
-// init(moment('20201101 135955'))
+// init(moment())
 
 var timer
 
@@ -68,7 +68,7 @@ function updateDisplay(now=moment()) {
     // Get the current hour
     var hour = now.hour()
 
-    // Update each color
+    // Update color(s)
     var cells = $('.info-column')
     console.log(cells);
     for (let i = 0, hr = workDay.start; i < cells.length; i++, hr++) {
