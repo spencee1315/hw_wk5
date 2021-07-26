@@ -1,5 +1,5 @@
 // Set the work hours
-const workDay = { start: 9, end: 18 }
+const workDay = { start: 9, end: 20 }
 
 var values, dateKey
 
@@ -35,6 +35,7 @@ function init(now=moment()) {
         </div>`)
         container.append(row)
     }
+    // Enters value to local storage on button click
     container.on('click', event => {
         if (event.target.matches('.saveBtn')) {
             var button = event.target
