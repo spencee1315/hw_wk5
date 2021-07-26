@@ -83,7 +83,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  cursor: pointer; added this */
+  cursor: pointer; /*added this*/
 }
 
 .saveBtn i:hover {
