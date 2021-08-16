@@ -2,11 +2,12 @@
 
 ## Description
 
-For the fourth week of the UW Coding Bootcamp my homework invited me to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It has a clean, polished, and responsive user interface and includes the time of the day, the current day in the header, a space to enter your task for each hour of the day, and a save button to click to save your task using local storage. Each hour is also color coded which updates based on if the time is past/current/future.
+For the fifth week of the UW Coding Bootcamp my homework invited me to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. It has a clean, polished, and responsive user interface and includes the time of the day, the current day in the header, a space to enter your task for each hour of the day, and a save button to click to save your task using local storage. Each hour is also color coded which updates based on if the time is past/current/future.
 
 ## Built With
 
 * [Moment JS](https://momentjs.com/))
+* [Font Awesome](https://kit.fontawesome.com/)
 
 ## Deployed Link
 
