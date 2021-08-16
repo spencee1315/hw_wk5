@@ -6,7 +6,7 @@ For the fifth week of the UW Coding Bootcamp my homework invited me to create a 
 
 ## Built With
 
-* [Moment JS](https://momentjs.com/))
+* [Moment JS](https://momentjs.com/)
 * [Font Awesome](https://kit.fontawesome.com/)
 
 ## Deployed Link
